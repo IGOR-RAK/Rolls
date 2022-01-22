@@ -1,23 +1,44 @@
 @import "./reset.scss";
+@import "./__variables.scss";
+@import "./header.scss";
+@import "./page.scss";
+@import "./item_counter.scss";
+@import "./card.scss";
+@import "./cart.scss";
+@import "./list.scss";
+@import "./phone.scss";
+@import "./modal.scss";
 
 
-html, body {
-    width: 100%;
+html, body {   
     height: 100%;
+    background-color: #F8F9F9;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    font-family: 'Merriweather', serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 #root{
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;    
+    align-items: stretch;  
+    justify-content: center;
+    margin: 0 auto; 
 }
 
 .main {
     flex-grow: 1;
-    border: 2px solid lightskyblue;
+    // border: 2px solid lightskyblue;
 }
 
 .header, .main, .footer {
     flex-shrink: 0;
+    text-align: center;
+    margin: 0 auto;
 }
+
+

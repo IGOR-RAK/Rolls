@@ -1,9 +1,16 @@
+import { totalReducer } from './TotalReducer';
+import { shopReducer } from './ShopReducer';
 import { combineReducers } from "redux";
-import { cartReducer } from "./cartReducer";
+import {productCartReducer} from "./ProductCartReducer";
+import {modalReducer} from "./ModalReducer"
 
 
-export const rootReducer = combineReducers({
-  cart: cartReducer,
+export const rootReducer = combineReducers({  
+  shop: shopReducer,
+  product_cart: productCartReducer,
+  total: totalReducer,
+  modal: modalReducer
+
  
 });
 

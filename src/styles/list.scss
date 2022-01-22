@@ -1,0 +1,12 @@
+.products{
+    // border: 2px solid red;
+    flex: 2;
+    
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  
+}
