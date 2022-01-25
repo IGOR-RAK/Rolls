@@ -31,32 +31,30 @@ const CartItem:React.FC<ICartItem> = ({el}) => {
         <>
         <BrowserView className="cart__item">
         
-                <img  src={el.img} className="cart__img" alt=""/>
+            <img  src={el.img} className="cart__img" alt=""/>
                 <div className="cart__info">
-                <div className="cart__head"><h4 className="cart__input-title">{el.title} 
-               
-               
-                </h4 > <span className="cart__icon"><DeleteOutlined onClick={deleteItem}/></span></div>
+                <div className="cart__head">
+                    <h4 className="cart__input-title">{el.title}</h4 > <span className="cart__icon"><DeleteOutlined onClick={deleteItem}/></span></div>
                 <div className="cart__discr">
                 <p className="cart__units"><small className="text-muted">{el.set} units</small></p>
                 <span>/</span>
-                <div>{el.weight} g.</div>
-                </div>
-                <div className="cart__calc">
-                 <div className="cart__counter-wrapper">
-                     {el.amount > 1?
-                     <div className="cart__counter__control" onClick={decreaseItem}>-</div>
+            <div>{el.weight} g.</div>
+            </div>
+            <div className="cart__calc">
+             <div className="cart__counter-wrapper">
+            {el.amount > 1?
+            <div className="cart__counter__control" onClick={decreaseItem}>-</div>
                      :
-                     <div className="cart__counter__control" onClick={deleteItem}>-</div>
-                     }
+            <div className="cart__counter__control" onClick={deleteItem}>-</div>
+            }
                     
-                     <div className="cart__counter__current">{el.amount} </div>
+            <div className="cart__counter__current">{el.amount} </div>
 
-                     <div className="cart__counter__control" onClick={increaseItem}>+</div>
+            <div className="cart__counter__control" onClick={increaseItem}>+</div>
                     
                      
-                 </div>
-                 <div className="cart__price">{el.price} $</div>
+            </div>
+            <div className="cart__price">{el.price} $</div>
                  
             </div>
             </div>

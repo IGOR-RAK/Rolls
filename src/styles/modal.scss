@@ -23,3 +23,14 @@
     font-weight: 700;
     padding: 50px;
 }
+
+ @media (max-width: 320px) {
+    .modal__box{
+      
+        height: 100px;
+        width: 200px;
+        font-size: 1rem;
+       
+    }
+
+   }

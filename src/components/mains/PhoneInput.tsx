@@ -9,8 +9,8 @@ interface IFormInput {
  
 
 const PhoneInput:React.FC = () => {
-    const {showModal} = useActions();
-   
+    const {showModal,hideMobileMenu} = useActions();
+  
     const {
         register,
         handleSubmit,        
@@ -18,7 +18,7 @@ const PhoneInput:React.FC = () => {
       } = useForm<IFormInput>();
     
       const onSubmit = (data: IFormInput) => {
-        console.log(data)
+        hideMobileMenu()
         showModal()
       };
    

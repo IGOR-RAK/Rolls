@@ -7,11 +7,11 @@ const Modal:React.FC = () => {
     const {hideModal} = useActions();
     useEffect(
         ()=>{
-                setTimeout(()=>{setMessage("Bye-bye")},1000)
+                setTimeout(()=>{setMessage("Bye-bye")},2000)
                 setTimeout(()=>{
                     hideModal();
                     document.location.reload();
-                },2000)
+                },3000)
                 
         },[]
     )
