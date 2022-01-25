@@ -8,6 +8,14 @@
 
     
 }
+.phone__mobile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
 
 
 .phone__btn{
@@ -60,3 +68,12 @@
 .phone__error{
     color: tomato;
 }
+
+// @media (max-width: 320px) {
+//     .phone__btn,.phone__title,.phone__input {
+//         font-size: 3rem;
+//     }
+//     .phone__error{
+//         font-size: 3rem;
+//     }
+//   }

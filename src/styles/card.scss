@@ -26,12 +26,16 @@
     font-size: 1.5rem;
     font-weight: 500;
     font-family: 'Merriweather', serif;
-    height: 70px;
+    height: 40px;
+    text-align: center;
 }
 
 .card__units{
     margin-top: 0;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__details-wrapper{
@@ -88,6 +92,9 @@
 
 .card__counter__current {
 	width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__btn{
@@ -114,3 +121,20 @@
     border-color: #eb5a1e;
 }
 
+.card__title--mobile{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card__price__currency--mobile{
+    font-size: 1rem;
+
+    font-weight: 700;
+}
+
+// @media (max-width: 320px) {
+//     .card__btn{
+//         font-size: 3rem;
+//     }
+
+//   }

@@ -1,5 +1,20 @@
 .main__container{
     width: $container-width;
     padding: 10px $container-padding;
+    margin: 0 auto;
     display: flex;
+}
+
+// @media (max-width: 320px) {
+//     .main__container{
+       
+//         padding: 10px $container-padding;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//     }
+//   }
+
+.main__mobile{
+   margin-top: 80px;
 }

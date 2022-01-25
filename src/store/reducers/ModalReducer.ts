@@ -3,7 +3,7 @@ import { IModal,ModalAction,ModalActionTypes } from './../../types/modal';
 
   
 const initialState:IModal  = {
-    showModal:false 
+    visible:false 
   };
 
   export const modalReducer = (
@@ -14,12 +14,12 @@ const initialState:IModal  = {
         case ModalActionTypes.OPEN_MODAL:
           return {
             ...state,          
-            showModal:true
+            visible:true
           };
           case ModalActionTypes.CLOSE_MODAL:
             return {
               ...state,          
-              showModal:false
+              visible:false
             };
        
        

@@ -13,7 +13,7 @@ const Counter:React.FC<ICounter> = ({counter,increase,decrease}) => {
     <>     
      <div className="card__counter-wrapper">
                     <div className="card__counter__control" onClick={decrease} >-</div>
-                    <div className="card__counter__current" >{counter}</div>
+                    <div className="card__counter__current" ><span>{counter}</span></div>
                     <div className="card__counter__control" onClick={increase}>+</div>
      </div>
      

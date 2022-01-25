@@ -1,5 +1,5 @@
 export interface IModal {
-    showModal:boolean
+    visible:boolean
 }
 
 export enum ModalActionTypes {

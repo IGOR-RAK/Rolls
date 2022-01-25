@@ -10,3 +10,25 @@
     grid-column-gap: 30px;
   
 }
+
+// @media (max-width: 320px) {
+//     .products{
+//         // border: 2px solid red;
+//         flex: 1;
+        
+//     }
+//     .card-container {
+//         grid-template-columns: 1fr;
+//         grid-column-gap: 0;
+//     }
+//   }
+
+
+
+.card-container--mobile{
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin: 0 10px;
+   
+  
+}

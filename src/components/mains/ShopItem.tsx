@@ -3,6 +3,7 @@ import { Counter } from "../ui/ItemCounter";
 import { IShopItem } from "../../types/shop";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import { ShopItemButton } from "../ui/ShopItemButton";
+import { BrowserView, MobileView} from 'react-device-detect';
 
 
 interface IItemContainer {
@@ -43,8 +44,9 @@ const ShopItem:React.FC<IItem> = ({item,visible}) => {
 
    
     return ( 
-       
-     <div className="card">        
+       <>
+       <BrowserView className="card">
+           
         <img className="card__img" src={item.img} alt=""/>
 	    <div className="card__body ">
 			<h4 className="card__title">{item.title}</h4>
@@ -60,11 +62,34 @@ const ShopItem:React.FC<IItem> = ({item,visible}) => {
                 </div>
 			</div>
 
+            <ShopItemButton visible={visible} item={item} counter={counter} />            
+     
+     </div>
+       </BrowserView>
+       <MobileView className="card">
+             
+        <img className="card__img" src={item.img} alt=""/>
+	    <div className="card__body ">
+			<h4 className="card__title--mobile">{item.title}</h4>
+            <p className="card__units"><small className="text-muted">{item.set} units</small></p>
+
+			<div className="card__details-wrapper">
+                
+                <Counter counter={counter} increase={increase} decrease={decrease} />
+
+                <div className="card__price">
+                    <div className="card__price__weight">{item.weight}g.</div>
+                    <div className="card__price__currency--mobile">{item.price} $</div>
+                </div>
+			</div>
+
             <ShopItemButton visible={visible} item={item} counter={counter} />
             
+    
      </div>
-     </div>
+       </MobileView>
      
+     </>
     );
 }
 

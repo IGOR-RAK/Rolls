@@ -8,7 +8,10 @@ const Layout = () => {
         <Header/>        
       </header> 
         <Outlet/>
-      <footer className="footer">2021 Igor Rak</footer>
+      <footer className="footer">
+        <p><span>GitHub Link:</span>  https://github.com/IGOR-RAK/Rolls</p>
+        <p>2022 Igor Rak</p>
+        </footer>
     </>);
 }
 
